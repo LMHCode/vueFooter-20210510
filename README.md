@@ -1,9 +1,11 @@
-# 脚手架还没做UI库以及移动端自适应配置（开发的时候可根据项目需要配置）
-按ui框架文档配置
-如果是移动端适配可新建一个postcss.config.js文件
-npm install postcss-loader --save-dev
-npm install postcss-px-to-viewport --save-dev
-然后引入以下代码
+### 脚手架还没做UI库以及移动端自适应配置（开发的时候可根据项目需要配置）
+- 按ui框架文档配置
+- 如果是移动端适配可新建一个postcss.config.js文件
+- npm install postcss-loader --save-dev
+- npm install postcss-px-to-viewport --save-dev
+- 然后引入以下代码
+
+```
 module.exports = {
   plugins: {
     autoprefixer: {},
@@ -19,6 +21,7 @@ module.exports = {
     },
   }
 } 
+```
 # vue-footer20210510
 
 ## Project setup
