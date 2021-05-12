@@ -1,5 +1,5 @@
 const dev = {
-  apiUrl: 'http://baidu.com'
+  apiUrl: ' http://127.0.0.1:7777'
 }
 
 const pre = {
