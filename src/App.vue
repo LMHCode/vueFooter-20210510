@@ -6,6 +6,7 @@
 
 <script>
 
+import './global.css'
 export default {
   name: 'App',
   components: {}

@@ -1,5 +1,6 @@
 import VueRouter from 'vue-router'
 import Vue from 'vue'
+import { changeThemes } from '../src/untils/changeTheme.js'
 
 Vue.use(VueRouter);
 
@@ -12,6 +13,10 @@ const router = new VueRouter({
     {
       path: '/home',
       component: () => import('@/view/home/index'),
+    },
+    {
+      path: '/my',
+      component: () => import('@/view/my/index'),
     }
     // ,
     // {
@@ -36,6 +41,8 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
+  let mode = localStorage.getItem('mode') || 'red'
+  changeThemes(mode)
   next()
 })
 
